@@ -110,7 +110,7 @@ nav {
 }
 .why-choose {
     background-color:hsl(220, 16%, 96%);
-    height: 100vh;
+    height: 110vh;
     color: hsl(233, 26%, 24%);
     margin-top: -117vh;
     padding-left: 8vw;
@@ -225,7 +225,7 @@ nav {
         border-radius: 100px;
     }
     .why-choose {
-        height: 1200px;
+        height: 1300px;
         margin-top: 0;
         font-size: 18px;
         text-align: center;
