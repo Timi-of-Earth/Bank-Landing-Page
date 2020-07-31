@@ -34,8 +34,9 @@ nav {
     list-style: none;
     background-image: linear-gradient(right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 }
-.nav-links a .hover {
+.nav-links a:hover {
     border-bottom: solid 2px hsl(136, 65%, 51%);
+    color: hsl(233, 26%, 24%);
 }
 
 .nav-links a{
@@ -137,10 +138,89 @@ nav {
 .articles {
     background-color: hsl(0, 0%, 98%);
     height: 100vh;
+    color: hsl(233, 26%, 24%);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 40px;
+}
+.article-cards {
+    display: flex;
+    margin-top: 30px;
+}
+.card {
+    display: inline-block;
+    background-color: white;
+    margin-right: 12px;
+    border-radius: 3px;
+    width: 140px;
+}
+.card-img {
+    width: 100%;
+}
+.card p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.title {
+    font-size: 10px;
+}
+.title:hover{
+    color: cadetblue;
+}
+.author {
+    font-size: 5px;
+}
+.content {
+    font-size: 7px;
 }
 .footer {
     height: 20vh;
     background-color: hsl(233, 26%, 24%);
+    display: flex;
+}
+.social-media {
+    width: 20%;
+    padding-left: 50px;
+    padding-top: 15px;
+    text-align: center;
+}
+.sm-logo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.sm-logo img {
+    width: 7px;
+}
+#logo-dark {
+    width: 50px;
+    justify-self: center;
+}
+.links {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.links a {
+    color: white;
+    font-size: 7px;
+    padding-right: 25px;
+}
+.end {
+    margin-right: 50px;
+    margin-top: 10px;
+    text-align: right;
+}
+.end p {
+    color: grey;
+    font-size: 7px;
+}
+.end button {
+    margin-right: 0;
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width:1024px){
@@ -256,10 +336,85 @@ nav {
         font-size: 25px;
     }
     .articles {
-        height: 1600px;
+        height: 2000px;
+    }
+    .article-cards {
+        flex-direction: column;
+        text-align: center;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .author {
+        font-size: 16px;
+    }
+    .content {
+        font-size: 19px;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: left;
     }
     .footer {
         height: 700px;
+        flex-direction: column;
+    }
+    .social-media {
+        width: 100%;
+        padding-top: 35px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+
+    }
+    .sm-logo {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        width: 70%;
+        padding: 0;
+        margin-left: 45px;
+    }
+    .sm-logo img {
+        width: 30px;
+    }
+    #logo-dark {
+        width: 50%;
+        justify-self: center;
+    }
+    .links {
+        display: flex;;
+        margin-top: 20px;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .links p {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .links a {
+        color: white;
+        font-size: 19px;
+        padding-right: 0;
+    }
+    .end {
+        margin-top: 50px;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .end p {
+        color: grey;
+        font-size: 7px;
+        text-align: center;
+    }
+    .end button {
+        margin-right: 0;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 0;
     }
 }
 .nav-links.active {
